@@ -162,7 +162,7 @@ body {
 }
 
 .glass-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(232, 255, 158, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     padding: 2rem;
@@ -177,6 +177,16 @@ body {
     margin-top: 1.5rem;
 }
 
+.skill-category .btn-sm {
+    color: #B7F527;
+}
+
+.skill-category .btn-sm:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #B7F527; /* เพิ่มเอฟเฟกต์เรืองแสงสีเขียว */
+    transform: translateY(-2px);
+}
+
 .tech-tags {
     display: flex;
     gap: 0.5rem;
@@ -185,8 +195,8 @@ body {
 }
 
 .tech-tags span {
-    background: rgba(183, 245, 39, 0.2);
-    border: 1px solid #B7F527;
+    background: rgba(211, 238, 148, 0.2);
+    border: 1px solid #fff;
     color: #ffffff;
     padding: 4px 12px;
     border-radius: 20px;
