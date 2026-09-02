@@ -183,7 +183,7 @@ body {
 
 .skill-category .btn-sm:hover {
     color: #ffffff;
-    text-shadow: 0 0 10px #B7F527; /* เพิ่มเอฟเฟกต์เรืองแสงสีเขียว */
+    text-shadow: 0 0 10px #B7F527;
     transform: translateY(-2px);
 }
 
