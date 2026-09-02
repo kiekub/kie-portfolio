@@ -158,7 +158,7 @@ body {
     font-family: 'Jost', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    text-shadow: 0 0 2px rgba(191, 255, 102, 0.93);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .glass-card {
@@ -200,13 +200,19 @@ body {
 /* ----------------------------------
    Project Links Styling
 ---------------------------------- */
+.project-links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
 .project-links a {
     color: #B7F527;              /* สีเขียวตาม Accent Color เดิมของธีม */
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
     display: inline-block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .project-links a:hover {
