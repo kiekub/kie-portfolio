@@ -135,25 +135,5 @@
                 <p><i class="fa-solid fa-location-dot"></i>  Bangkok, Thailand</p>
             </div>
         </section>
-
-        //Force Play (กรณีโดน Low Power Mode บล็อก)
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-            const video = document.getElementById('bg-video');
-            if (video) {
-            // บังคับปิดเสียง
-            video.muted = true;
-      
-            const playPromise = video.play();
-            if (playPromise !== undefined) {
-            playPromise.catch(error => {
-            // หากเบราว์เซอร์เก็บบล็อกการเล่นอัตโนมัติ (เช่น Low Power Mode)
-            console.log("Autoplay blocked, showing fallback poster.");
-            });
-        }
-        }
-        });
-        </script>
-
 </body>
 </html>
