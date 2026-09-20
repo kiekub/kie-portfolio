@@ -1096,4 +1096,14 @@ body {
     .contact-box {
         padding: 1.5rem;
     }
+      /* Project Badge - Mobile */
+    .project-badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .project-title {
+        margin-top: 0;
+    }
 }
