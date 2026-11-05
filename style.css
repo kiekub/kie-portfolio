@@ -42,7 +42,8 @@
     /* Background Surfaces */
     --bg-outer: #F2F7FB;
     --bg-window: #FFFFFF;
-    --bg-card: #FFFFFF;
+    --bg-card: #FFFFFF
+    --border-color: #C4DDF0;
     --bg-card-subtle: #F4F8FC;
     --bg-card-muted: #E6F1FA;
     
@@ -1134,7 +1135,6 @@ body {
 .exp-featured-card {
     grid-column: span 2;
     background: var(--bg-card);
-    border: 1.5px solid var(--color-terracotta-border);
 }
 
 .exp-date-badge {
@@ -1344,7 +1344,6 @@ body {
 .project-card-featured {
     grid-column: span 2;
     background: var(--bg-card);
-    border: 1.5px solid var(--color-terracotta-border);
 }
 
 .project-category-badge {
@@ -1381,7 +1380,7 @@ body {
     content: '→';
     position: absolute;
     left: 0;
-    color: var(--color-terracotta);
+    color: var(--color-ochre-dark);
     font-weight: 700;
 }
 
