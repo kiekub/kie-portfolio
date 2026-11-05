@@ -9,51 +9,53 @@
 ---------------------------------- */
 :root {
     /* Earth Tone Palette - Warm, Organic & Balanced */
-    --color-moss: #29382b;
-    --color-moss-light: #374a3a;
-    --color-moss-bg: #eaf0eb;
-    
-    --color-sage: #4f6854;
-    --color-sage-dark: #26382b;
-    --color-sage-bg: #ebf1ec;
-    --color-sage-border: #cad7cd;
+    --color-moss: #5798D7;
+    --color-moss-light: #78ADE0;
+    --color-moss-bg: #E6F1FA;
 
-    --color-terracotta: #ba5f40;
-    --color-terracotta-hover: #a54f32;
-    --color-terracotta-bg: #f8efeb;
-    --color-terracotta-border: #e9d3ca;
+    --color-sage: #5798D7;
+    --color-sage-dark: #356FAD;
+    --color-sage-bg: #E6F1FA;
+    --color-sage-border: #C4DDF0;
 
-    --color-ochre: #bd813f;
-    --color-ochre-dark: #7a4f1e;
-    --color-ochre-bg: #f9f3e8;
-    --color-ochre-border: #eadcc8;
+ /* Lime Accent */
+    --color-terracotta: #B9C225;
+    --color-terracotta-hover: #A2AB1C;
+    --color-terracotta-bg: #F5F6E3;
+    --color-terracotta-border: #DDE29C;
 
-    --color-taupe: #685a4d;
-    --color-taupe-bg: #f2ece6;
-    --color-taupe-border: #dcd3c8;
+    --color-ochre: #B9C225;
+    --color-ochre-dark: #737B16;
+    --color-ochre-bg: #F5F6E3;
+    --color-ochre-border: #DDE29C;
 
-    --color-charcoal: #272522;
-    --color-charcoal-hover: #383430;
-    --color-black: #1f1d1a;
-    --color-white: #ffffff;
+/* Neutral Palette */
+    --color-taupe: #52677A;
+    --color-taupe-bg: #EFF4F8;
+    --color-taupe-border: #D9E3EC;
+
+    --color-charcoal: #25384B;
+    --color-charcoal-hover: #344E67;
+    --color-black: #1D2B3A;
+    --color-white: #FFFFFF;
 
     /* Background Surfaces */
-    --bg-outer: #f5f1eb;
-    --bg-window: #fcfbf9;
-    --bg-card: #ffffff;
-    --bg-card-subtle: #f7f4ee;
-    --bg-card-muted: #efe9df;
+    --bg-outer: #F2F7FB;
+    --bg-window: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-card-subtle: #F4F8FC;
+    --bg-card-muted: #E6F1FA;
     
     /* Borders */
-    --border-light: rgba(60, 50, 40, 0.08);
-    --border-card: #e7e1d6;
-    --border-card-hover: #d7cfc2;
+    --border-light: rgba(53, 111, 173, 0.08);
+    --border-card: #DFE9F1;
+    --border-card-hover: #B9D3E8;
 
     /* Text Colors (High Contrast, Gentle on Eyes) */
-    --text-primary: #22201d;
-    --text-secondary: #57524a;
-    --text-muted: #8b857b;
-    --text-light: #ffffff;
+    --text-primary: #25384B;
+    --text-secondary: #52677A;
+    --text-muted: #8293A2;
+    --text-light: #FFFFFF;
 
     /* Typography */
     --font-heading: 'Plus Jakarta Sans', 'Outfit', 'Sarabun', -apple-system, sans-serif;
@@ -68,21 +70,26 @@
     --radius-pill: 9999px;
 
     /* Natural Soft Earthy Shadows */
-    --shadow-window: 0 20px 50px -15px rgba(45, 38, 30, 0.07), 0 0 1px rgba(45, 38, 30, 0.04);
-    --shadow-card: 0 4px 18px -4px rgba(45, 38, 30, 0.04), 0 1px 2px rgba(45, 38, 30, 0.02);
-    --shadow-card-hover: 0 12px 28px -6px rgba(45, 38, 30, 0.09), 0 2px 6px rgba(45, 38, 30, 0.03);
+    --shadow-window: 0 20px 50px -15px rgba(37, 56, 75, 0.08),
+                     0 0 1px rgba(37, 56, 75, 0.04);
+
+    --shadow-card: 0 4px 18px -4px rgba(37, 56, 75, 0.05),
+                   0 1px 2px rgba(37, 56, 75, 0.02);
+
+    --shadow-card-hover: 0 12px 28px -6px rgba(37, 56, 75, 0.12),
+                         0 2px 6px rgba(37, 56, 75, 0.04);
 
     /* Transitions */
     --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-normal: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 
     /* Legacy Token Aliases for 100% Backward Compatibility */
-    --color-periwinkle: var(--color-terracotta);
-    --color-periwinkle-hover: var(--color-terracotta-hover);
+    --color-periwinkle: var(--color-moss);
+    --color-periwinkle-hover: var(--color-sage-dark);
     --color-mint: var(--color-sage-bg);
     --color-mint-dark: var(--color-sage-dark);
     --color-violet: var(--color-taupe);
-    --color-yellow: #f4ecdf;
+    --color-yellow: var(--color-terracotta-bg);
     --color-yellow-dark: var(--text-primary);
 }
 
@@ -1008,7 +1015,7 @@ body {
 .icon-periwinkle,
 .icon-terracotta {
     background-color: var(--color-terracotta-bg);
-    color: var(--color-terracotta);
+    color: var(--color-ochre-dark);
     border: 1px solid var(--color-terracotta-border);
 }
 
@@ -1144,41 +1151,48 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Date Badge Earth Tones */
+/* Date Badge - Blue & Lime Palette */
+
+/* Sage → Light Blue */
 .badge-sage {
-    background-color: var(--color-sage-bg) !important;
-    color: var(--color-sage-dark) !important;
-    border: 1px solid var(--color-sage-border) !important;
+    background-color: #E6F1FA !important;
+    color: #24527A !important;
+    border: 1px solid #A8CDEB !important;
 }
 
+/* Terracotta → Blue */
 .badge-terracotta {
-    background-color: var(--color-terracotta-bg) !important;
-    color: var(--color-terracotta) !important;
-    border: 1px solid var(--color-terracotta-border) !important;
+    background-color: #DCEBFA !important;
+    color: #24527A !important;
+    border: 1px solid #9FC5E8 !important;
 }
 
+/* Ochre → Lime */
 .badge-ochre {
-    background-color: var(--color-ochre-bg) !important;
-    color: var(--color-ochre-dark) !important;
-    border: 1px solid var(--color-ochre-border) !important;
+    background-color: #F3F5D9 !important;
+    color: #505817 !important;
+    border: 1px solid #D5DC80 !important;
 }
 
+/* Taupe → Neutral Blue Gray */
 .badge-taupe {
-    background-color: var(--color-taupe-bg) !important;
-    color: var(--color-taupe) !important;
-    border: 1px solid var(--color-taupe-border) !important;
+    background-color: #EDF2F6 !important;
+    color: #40566A !important;
+    border: 1px solid #C6D3DE !important;
 }
 
+/* Moss → Stronger Lime */
 .badge-moss {
-    background-color: #eaf0eb !important;
-    color: #26382b !important;
-    border: 1px solid #cad7cd !important;
+    background-color: #EEF1C9 !important;
+    color: #454D12 !important;
+    border: 1px solid #B9C225 !important;
 }
 
+/* Clay → Light Blue with Dark Text */
 .badge-clay {
-    background-color: #f7efeb !important;
-    color: #a54f32 !important;
-    border: 1px solid #e9d3ca !important;
+    background-color: #E6F1FA !important;
+    color: #24527A !important;
+    border: 1px solid #9FC5E8 !important;
 }
 
 .exp-org {
@@ -1209,7 +1223,7 @@ body {
     position: absolute;
     left: 0.2rem;
     top: -0.1rem;
-    color: var(--color-terracotta);
+    color: var(--color-ochre-dark);
     font-size: 1.15rem;
     font-weight: 800;
 }
@@ -1234,7 +1248,7 @@ body {
 
 .pill-tag.tag-highlight {
     background-color: var(--color-terracotta-bg);
-    color: var(--color-terracotta);
+    color: var(--color-ochre-dark);
     border-color: var(--color-terracotta-border);
 }
 
@@ -1604,6 +1618,129 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/* =========================================
+   NEW BLUE & LIME THEME OVERRIDES
+========================================= */
+
+/* Selection */
+::selection {
+    background: #E6F1FA;
+    color: #356FAD;
+}
+
+/* Terminal code colors */
+.code-kw { color: #B9C225; }
+.code-var { color: #E6F1FA; }
+.code-prop { color: #9CC8EA; }
+.code-str { color: #DCE99B; }
+
+/* Profile status */
+.dev-status-badge {
+    background: #B9C225;
+    color: #25384B;
+    box-shadow: 0 2px 6px rgba(185, 194, 37, 0.25);
+}
+
+.dev-sub-hello {
+    color: #5798D7;
+}
+
+/* Terminal badge */
+.terminal-badge {
+    background: rgba(185, 194, 37, 0.18);
+    color: #DDE68A;
+}
+
+/* Showcase footer */
+.showcase-footer-link {
+    color: #B9C225;
+}
+
+/* Profile and contact buttons */
+.dev-email-btn,
+.btn-nav-cv {
+    background: #5798D7;
+    color: #FFFFFF;
+}
+
+.dev-email-btn:hover,
+.btn-nav-cv:hover {
+    background: #397DBB;
+}
+
+/* Stat cards */
+.stat-bento-card.stat-violet,
+.stat-bento-card.stat-sand {
+    background: #F5F6E3;
+    border-color: #DDE29C;
+    color: #737B16;
+}
+
+/* Highlight icons */
+.highlight-icon,
+.contact-item-icon {
+    background: #5798D7;
+    color: #FFFFFF;
+}
+
+/* Role graphic */
+.sphere-3d-graphic {
+    background: linear-gradient(145deg, #5798D7, #B9C225);
+    box-shadow: 0 4px 14px rgba(87, 152, 215, 0.25);
+}
+
+/* Project buttons */
+.btn-project-purple {
+    background: #E6F1FA;
+    color: #356FAD;
+    border-color: #C4DDF0;
+}
+
+.btn-project-purple:hover {
+    background: #5798D7;
+    color: #FFFFFF;
+}
+
+/* Contact card */
+.contact-card-yellow {
+    background: linear-gradient(150deg, #E6F1FA 0%, #F5F6E3 100%);
+    border-color: #C4DDF0;
+}
+
+/* Active filters */
+.filter-btn.active {
+    background: #5798D7;
+    border-color: #5798D7;
+    color: #FFFFFF;
+}
+
+/* Skill highlight */
+.skill-bubble.bubble-accent {
+    background: #5798D7;
+    border-color: #5798D7;
+    color: #FFFFFF;
+}
+
+.skill-bubble.bubble-accent:hover {
+    background: #356FAD;
+    border-color: #356FAD;
+}
+
+/* Project category */
+.project-category-badge {
+    background: #E6F1FA;
+    color: #356FAD;
+    border-color: #C4DDF0;
+}
+
+/* Hover accents */
+.contact-value:hover,
+.corner-arrow:hover {
+    color: #5798D7;
+}
+
 
 /* ----------------------------------
    RESPONSIVE LAYOUT & MEDIA QUERIES
